@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -14,33 +15,23 @@
   <style>
     #bhag {
       position: absolute;
-      top: 13.5%;
-      left: 0;
+      top: 11.5%;
+      left: 1%;
       margin-top: 30px;
       opacity: 0.3;
       background-color: white;
-
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     }
 
     #bhag:hover {
-      opacity: 1;
+      opacity:0.5;
       border-color: red;
     }
 
     section {
-      padding: 100px;
-    }
-
-    section h2 {
-      font-size: 3.5em;
-      color: #555;
-    }
-
-    section p {
-      font-size: 1.5em;
-      color: #555;
+      padding-left: 30px;
+      margin-top:60px;
     }
 
     #scroll {
@@ -164,6 +155,11 @@
       100% {
         height: 0;
       }
+    }
+    #card{
+      margin-top:40px;
+      margin-bottom: 40px;
+      display: flex;
     }
   </style>
 </head>
@@ -313,30 +309,89 @@
     <div id="prog"></div>
     <div id="scroll"></div>
     <div id="per"></div>
+    
     <section>
-      <h2>
-        hello ok
-      </h2>
-      <p> hello world
-        A programming language is a formal language comprising a set of instructions that produce various kinds of
-        output. Programming languages are used in computer programming to implement algorithms.
-
-        Most programming languages consist of instructions for computers. There are programmable machines that use a set
-        of specific instructions, rather than general programming languages. Since the early 1800s, programs have been
-        used to direct the behavior of machines such as Jacquard looms, music boxes and player pianos.[1] The programs
-        for these machines (such as a player piano's scrolls) did not produce different behavior in response to
-        different inputs or conditions.
-
-        Thousands of different programming languages have been created, and more are being created every year. Many
-        programming languages are written in an imperative form (i.e., as a sequence of operations to perform) while
-        other languages use the declarative form (i.e. the desired result is specified, not how to achieve it).
-
-        The description of a programming language is usually split into the two components of syntax (form) and
-        semantics (meaning). Some languages are defined by a specification document (for example, the C programming
-        language is specified by an ISO Standard) while other languages (such as Perl) have a dominant implementation
-        that is treated as a reference. Some languages have both, with the basic language defined by a standard and
-        extensions taken from the dominant implementation being common.
-      </p>
+      <!-- <div class="card" style="width: 18rem;">
+        <img src="11.PNG" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Samsung</h5>
+          <p class="card-text" style="text-align: center;">21 Din me Paisa Double</p>
+          <center><a href="#" class="btn btn-primary">Check</a></center>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="11.PNG" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Nokia</h5>
+          <p class="card-text" style="text-align: center;">25 Din me Paisa Double</p>
+          <center><a href="#" class="btn btn-primary">Check</a></center>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="11.PNG" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center;">Apple</h5>
+          <p class="card-text" style="text-align: center;">30 Din me Paisa Double</p>
+          <center><a href="#" class="btn btn-primary">Check</a></center>
+        </div>
+      </div> -->
+      <div class="card-group" style="margin-right: 50px;">
+        <div class="card">
+          <img src="11.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Apple</h5>
+            <p class="card-text" style="text-align: center;">21 Din me Paisa Double</p>
+            
+            <center><a href="#" class="btn btn-primary">Check</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img src="11.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Samsung</h5>
+            <p class="card-text" style="text-align: center;">25 Din me Paisa Double</p>
+            <center><a href="#" class="btn btn-primary">Check</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img src="11.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Nokia</h5>
+          <p class="card-text" style="text-align: center;">30 Din me Paisa Double</p>
+          <center><a href="#" class="btn btn-primary">Check</a></center>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="height: 10px;color: red;">
+    <section>
+      <div class="card-group" style="margin-right: 50px;">
+        <div class="card">
+          <img src="11.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Apple</h5>
+            <p class="card-text" style="text-align: center;">21 Din me Paisa Double</p>
+            
+            <center><a href="#" class="btn btn-primary">Check</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img src="11.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Samsung</h5>
+            <p class="card-text" style="text-align: center;">25 Din me Paisa Double</p>
+            <center><a href="#" class="btn btn-primary">Check</a></center>
+          </div>
+        </div>
+        <div class="card">
+          <img src="11.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Nokia</h5>
+          <p class="card-text" style="text-align: center;">30 Din me Paisa Double</p>
+          <center><a href="#" class="btn btn-primary">Check</a></center>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
   <script>
@@ -359,10 +414,10 @@
       $('header').hide(-3000);
       $('#bhag').hide(-3000);
       $('.loader').show();
-      $('.loader').hide(8000);
-      $('header').show(10000);
-      $('section').show(12000);
-      $('#bhag').show(12000);
+      $('.loader').hide(4000);
+      $('header').show(4000);
+      $('section').show(4000);
+      $('#bhag').show(4000);
     });  
   </script>
 </body>
