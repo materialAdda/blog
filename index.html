@@ -482,7 +482,7 @@
 </svg></div>
 
 <input class="form-control me-2" style="width:300px" type="search" data-toggle="tooltip" data-placement="left"
-title="press enter to continue" id="botin" placeholder="Search" aria-label="Search">
+title="press enter to continue" id="botin" placeholder="eg. company model" aria-label="Search">
   <script>
     var pro = document.getElementById('prog');
     var p = document.getElementById('per');
@@ -531,38 +531,39 @@ title="press enter to continue" id="botin" placeholder="Search" aria-label="Sear
         }
         var c = a.split(" ");
         var l = c.length;
+        
         count++;
 
         for (var i = 0; i < l; i++) {
-            if (c[i] == 'samsung') {
+            if (c[i].toLowerCase() == 'samsung') {
                 alert('samsung found');
                 break;
             }
-            else if (c[i] == 'apple') {
+            else if (c[i].toLowerCase() == 'apple') {
                 alert('apple found');
                 break;
             }
-            else if (c[i] == 'mi') {
+            else if (c[i].toLowerCase() == 'mi') {
                 alert('mi found');
                 break;
             }
-            else if (c[i] == 'realme') {
+            else if (c[i].toLowerCase() == 'realme') {
                 alert('realme found');
                 break;
             }
-            else if (c[i] == 'oppe') {
+            else if (c[i].toLowerCase() == 'oppe') {
                 alert('oppo found');
                 break;
             }
-            else if (c[i] == 'lava') {
+            else if (c[i].toLowerCase() == 'lava') {
                 alert('lava found');
                 break;
             }
-            else if (c[i] == 'lg') {
+            else if (c[i].toLowerCase() == 'lg') {
                 alert('lg found');
                 break;
             }
-            else if (c[i] == 'huawei') {
+            else if (c[i].toLowerCase() == 'huawei') {
                 alert('huaweu found');
                 break;
             }
@@ -572,7 +573,7 @@ title="press enter to continue" id="botin" placeholder="Search" aria-label="Sear
                 break;
             }
         }
-        document.getElementById('botin').value=" ";
+        document.getElementById('botin').value="";
         document.getElementById('botin').style.opacity="0";
         
     });
