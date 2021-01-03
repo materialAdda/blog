@@ -12,9 +12,7 @@ function ingo() {
     document.getElementById('botin').style.opacity = "0.6";
     document.getElementById('botin').style.borderColor = "red";
 }
-function ok() {
-    alert("Going.....");
-}
+
 
 // jquery
 $(document).ready(function () {
@@ -32,9 +30,6 @@ $(document).ready(function () {
     $('#bot').show(4000);
     $('.para').show(4000);
     $('#bhag').show(4000);
-    // $('#okhi').click(function(){
-    //   document.getElementById('upar').style.zIndex="2";
-    // })
 });
 
 // bot jquery
@@ -55,16 +50,16 @@ $("#botin").keypress(function go() {
     for (var i = 0; i < l; i++) {
         if (c[i].toLowerCase() == 'samsung') {// company name ayiya muki devanu samsung ni jagya
             if (c[i + 1] == 'note') {// ayiya model nu first word foe example note, galaxy etc.
-                if(c[i+2]=='7'){// ayiya model number avse.
+                if (c[i + 2] == '7') {// ayiya model number avse.
                     alert("samsung note 7 found");// jya jya alert che tya apde e page open kar daisu name pramane.
                     break;
                 }
-                else{
+                else {
                     alert("not found try again with correct name");
                     break;
                 }
             }
-            else if(c[i+1]==null){
+            else if (c[i + 1] == null) {
                 alert("samsung");
             }
             else {
