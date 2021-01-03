@@ -14,12 +14,15 @@
   <link rel="stylesheet" href="indexstyle.css">
   <script>
     function pan() {
-      document.getElementById('panel').style.opacity = "1";
+      document.getElementById('panel').style.opacity = "0.8";
       document.getElementById('mark').style.filter = "blur(10px)";
+      document.getElementById('oknav').style.filter="blur(8px)";
+      
     }
     function clo() {
       document.getElementById('panel').style.opacity = "0";
       document.getElementById('mark').style.filter ="blur(0)";
+      document.getElementById('oknav').style.filter="blur(0)";
 
     }
   </script>
@@ -102,7 +105,7 @@
   <!-- have mobile vadu nav bar class="d-md-none"
      -->
   <header id="mobnav" style="z-index: 0;">
-    <nav class="navbar navbar-light bg-dark">
+    <nav class="navbar navbar-light bg-dark" id="oknav">
       <div class="container-fluid">
         <a class="navbar-brand" style="color: orange;" id="dan">Gadget World</a>
         <div id="ser">

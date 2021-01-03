@@ -22,13 +22,14 @@ $(document).ready(function () {
     $('.para').hide(-3000);
     $('.box').hide(-3000);
     $('#bot').hide(-3000);
+    $('#para').hide(-3000);
     $('.loader').show();
     $('.loader').hide(4000);
     $('header').show(4000);
     $('section').show(4000);
     $('.box').show(4000);
     $('#bot').show(4000);
-    $('.para').show(4000);
+    $('#para').show(4000);
     $('#bhag').show(4000);
 });
 

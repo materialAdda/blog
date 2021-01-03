@@ -220,7 +220,7 @@
   cursor: pointer;
   position: absolute;
   top:20%;
-  right:9%;
+  right:8%;
   border: black 1px solid;
   border-radius: 7px;
 }
@@ -233,6 +233,7 @@
   position: absolute;
   top:0;
   border-right: black 1px solid;
+  /* position: fixed; */
 }
 #hed{
   position: absolute;
@@ -244,15 +245,18 @@
 }
 #cross{
   position: absolute;
-  top:0;
+  top:1%;
   left:86%;
   cursor: pointer;
   font-weight: bolder;
   color: #000000;
+  width:10px;
+  height: 10px;
 }
 hr{
   position: absolute;
-  top:8%;
+  top:10%;
+  color:red;
 }
 #but{
   position: absolute;
@@ -267,6 +271,7 @@ hr{
   border-radius: 24px;
   font-weight: bolder;
   color: #000000;
+  outline:none;
 }
 .btp:hover{
   background-color: rgb(241, 114, 91);
