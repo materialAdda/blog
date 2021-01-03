@@ -90,7 +90,7 @@
   </header>
   <!-- have mobile vadu nav bar class="d-md-none"
      -->
-  <header id="mobnav">
+  <header id="mobnav" style="z-index: 0;">
     <nav class="navbar navbar-light bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" style="color: orange;" id="dan">Gadget World</a>
@@ -99,7 +99,10 @@
         </div>
       </div>
     </nav>
-    <div>
+    <svg xmlns="http://www.w3.org/2000/svg" id="mark" onclick="go()" width="40" height="36" fill="currentColor" class="bi bi-filter-right" viewBox="0 0 16 16">
+      <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/>
+    </svg></div>
+    <!-- <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="bhag" style="z-index:1">
         <div class="container-fluid">
 
@@ -156,14 +159,9 @@
                   <li><a class="dropdown-item" href="#">Another action</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+              </li> -->
+   
   </header>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <div class="loader"></div>
   <div>
     <div id="prog"></div>
@@ -175,7 +173,7 @@
 
   </div>
   </section>
-  <div class="container">
+  <div class="container" style="margin-top:-50px;">
     <div class="box">
       <div class="content">
         <img src="11.PNG">
