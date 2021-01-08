@@ -227,7 +227,7 @@
 #panel{
   width:200px;
   height:178vw;
-  background-color:#ffffff;
+  background-color:#504c4c;
   opacity: 0;
   z-index:1;
   position: absolute;
@@ -278,4 +278,10 @@ hr{
   border: green 2px solid;
   border-radius: 24px;
   outline: none;
+}
+@keyframes butanimation{
+  0%{width:100px;border-color: green 3px solid;background-color: greenyellow;}
+  25%{width:120px;border-color: rgb(238, 26, 11) 3px solid;color:red}
+  75%{width:140px;border-color: rgb(72, 43, 238) 2px solid;}
+  100%{width:150px;border-color: green 2px solid;}
 }

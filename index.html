@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="indexstyle.css">
   <script>
     function pan() {
-      document.getElementById('panel').style.opacity = "0.8";
+      document.getElementById('panel').style.opacity = "1";
+      document.getElementById('panel').style.transition="0.5s";
       document.getElementById('mark').style.filter = "blur(10px)";
       document.getElementById('oknav').style.filter="blur(8px)";
       
@@ -23,9 +24,9 @@
       document.getElementById('panel').style.opacity = "0";
       document.getElementById('mark').style.filter ="blur(0)";
       document.getElementById('oknav').style.filter="blur(0)";
-
     }
   </script>
+
 </head>
 <!-- class="d-none d-md-block" -->
 
@@ -107,7 +108,7 @@
   <header id="mobnav" style="z-index: 0;">
     <nav class="navbar navbar-light bg-dark" id="oknav">
       <div class="container-fluid">
-        <a class="navbar-brand" style="color: orange;" id="dan">Gadget World</a>
+        <a class="navbar-brand" style="color: orange;margin-left:30px;" id="dan">Gadget World</a>
         <div id="ser">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </div>
@@ -199,6 +200,21 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+ <script> $(document).ready(function(){
+    // $('#para').click(function(event){ 
+    //   if(event.pageX>210)
+    //   clo();
+    // });
+    $(document).click(function(event){
+      if(event.pageX>210&&event.pageY>90)
+      clo();
+    })
+    
+  });
+  </script>
+    
+  </script>
   <script src="indexscript.js"></script>
 
 </body>
